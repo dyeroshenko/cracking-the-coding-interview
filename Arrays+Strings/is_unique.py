@@ -16,7 +16,6 @@ def check_if_unique_brute_force(string):
     return True
 
 
-
 def check_if_unique_bit_manipulation(string):
     """
     Time complexity: O(n)
