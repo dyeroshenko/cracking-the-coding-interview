@@ -58,3 +58,16 @@ class LinkedList:
             self.head = new_tail
 
         self.tail = new_tail
+
+    def remove_head(self) -> Any:
+        if len(self) == 0:
+            return None
+
+        removed_node = self.head
+
+        if self.head == self.tail:
+            self.tail = self.tail.next
+        
+        self.head = self.head.next
+
+        return removed_node
